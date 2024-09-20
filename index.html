@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Navigation</title>
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+
+<!-- <header>
+    <nav class="navbar">
+        <h1 class="projectname">Travel Smart</h1>
+        <ul>
+            <li><a href="#homesection" style="color: lightseagreen;">Home</a></li>
+            <li><a href="#tripsection">Trip Category</a></li>
+            <li><a href="#aboutsection">About</a></li>
+            <li><a href="#contactsection">Contact</a></li>
+        </ul>
+    </nav>
+</header> -->
+    
+
+<!-- NAVBAR CONTAINER -->
+
+<div class="container-fluid ">
+    <header class="">
+  
+      <!-- show row -->
+      <div class="row ms-2 me-5" id="firstnavrow">
+                  
+                  <div class="col-4" id="name1">  
+                      <a href="index.html" style="text-decoration: none;" class="travel"><p  style="text-decoration: none;color:black">Travel <span style="color: rgb(49, 160, 49);">Smart.</span></p></a>
+                  </div>
+      
+                  <div class="col-8 mt-1">
+                      <nav class="navbar justify-content-end " id="shownav">
+                           <!-- <ul class="uls"> -->
+                              <a href="#home" class="active" style="text-decoration: none;;">Home</a>
+                              <a href="#trip" style="text-decoration: none;">Trip Categories</a>
+                              <a href="#about" style="text-decoration: none;">About</a>
+                              <a href="#contact" style="text-decoration: none;">Contact</a>
+                              <a href="#review" style="text-decoration: none;">Tour Reviews</a>
+                           <!-- </ul> -->
+                      </nav>
+                  </div>
+      </div>
+      <!--show row end-->
+      
+      <!-- hide row -->
+      <div class="row ms-2 me-1 me-sm-0" id="secnavrow">
+      
+        <div class="col-10 mb-2" id="name2">
+            <a href="index.html" style="text-decoration: none;" class="travel"><p  style="text-decoration: none;color:black">Travel <span style="color: rgb(49, 160, 49);">Smart.</span></p></a>
+
+      </div>
+          
+          <!-- hide / show "icons" -->
+          <div class="col-2 mb-3 justify-content-end" id="icons">
+              <div class="iconbox">
+              <i class="fa-solid fa-bars" id="linesicon"></i>
+              <i class="fa-solid fa-times" id="crossicon"></i>
+              </div>
+          </div>
+            
+      </div>
+      <!-- hide row end-->
+      
+      <!-- second navbar -->
+          <div class="row" id="navbar2row">
+              <div class="col-12">
+                  <nav class="navbar2 ps-2" id="hidenav">
+                       <!-- <ul class="ms-1"> -->
+                          <!-- <a href="#home" class="active"><li class=" ">Home</li></a>
+                          <a href="#trip"><li class="lis">Trip Categories</li></a>
+                          <a href="#review"><li class="lis">Tour Review</li></a>
+                          <a href="#about"><li class="lis">About</li></a>
+                          <a href="#contact"><li  class="lis">Contact</li></a> -->
+                       <!-- </ul> -->
+                       <a href="#home" class="active" style="text-decoration: none;;">Home</a>
+                       <a href="#trip" style="text-decoration: none;">Trip Categories</a>
+                       <a href="#about" style="text-decoration: none;">About</a>
+                       <a href="#contact" style="text-decoration: none;">Contact</a>
+                       <a href="#review" style="text-decoration: none;">Tour Reviews</a>
+                  </nav> 
+              </div>
+          </div>
+      <!-- second navbar end-->
+      
+    </header>
+</div>
+
+
+<!-- NAVBAR CONTAINER END HERE -->
+
+
+
+    <!-- HOME SECTION STARTS HERE -->
+    <section id="home" class="">
+
+        <!-- <div class="container-fluid ">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="height: 600px;">
+                    <img src="images/about1.jpg" class="d-block w-100 object-fit" style="height: 600px;" alt="...">
+                  </div>
+                  <div class="carousel-item" style="height: 600px;">
+                    <img src="images/About2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" style="height: 600px;">
+                    <img src="images/jrcsIg.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div> -->
+
+        <!-- HOME PAGE SLIDER START -->
+        <div class="container-fluid" id="homecontainer">
+            <div class="row">
+                <img src="images/Blue Illustrative Travel Poster.png" class="" alt="">
+                <div class="col-12 " id="slider">
+                         <!-- <p>Lest's Go</p> -->
+                        <!-- <h1 style="font-weight: bold; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Explore And Travel</h1>  -->
+                </div>
+                
+            </div>
+            
+        </div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,224C480,203,600,117,720,85.3C840,53,960,75,1080,106.7C1200,139,1320,181,1380,202.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> -->
+        <!-- HOME PAGE SLIDER END  -->
+            
+    </section>
+    <!-- HOME SECTION ENDS HERE -->
+
+
+
+
+    <!-- TRIP SECTION START -->
+    <section id="trip" class="">
+        <div class="container" id="tripcontainer">
+
+            <!-- heading row start -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 style="color: rgb(49, 160, 49); font-family: cursive;">Choose Your</h3>
+                    <h1 id="perfectholiday" style=" border-bottom: 3px solid rgb(49, 160, 49) ; display: inline-block;"> Perfect Holiday</h1>
+                </div>
+            </div>
+            <!-- heading row end -->
+
+            <!-- countries n,america : europe : asia : antantice -->
+
+            <!-- pictures first row start -->
+            <div class="row mt-5" id="countrycards">
+                <!-- <h3 class="col-12 text-center mb-3" style="color: lightseagreen; font-family: cursive;">America Destinations</h3> -->
+                
+                    <div data-bs-toggle="modal" data-bs-target="#americamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img1" id="">
+                    <!-- <img src="https://cachedimages.podchaser.com/256x256/aHR0cHM6Ly9jb250ZW50LmJjYXN0Y2RuLmNvbS91cGxvYWRzLzg2MXk3MncxLzA1YTZjYzcwLThhYjctMTFlZC05NzlmLTYzNzk0M2Y2NDM4Yi8wNWE2Y2RjMC04YWI3LTExZWQtYmU5NC1lZDZlMWZjOTAwMzUuanBn/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D" -->
+                    <div class="cards h-100">
+                    <img src="https://i.ytimg.com/vi/CkQwWPHbmBM/maxresdefault.jpg" 
+                    alt="Error" class="w-100 h-100" id="roundimages">
+                    </div>  
+                </div>
+                
+                <div data-bs-toggle="modal" data-bs-target="#americamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img2">
+                    <div class="cards">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/spain-holiday-destinations-lead-girona-pol-albarra-n-1675292136.jpg?crop=0.654xw:1.00xh;0.0913xw,0&resize=1200:*" 
+                    alt="" class="w-100">
+                    </div>
+                </div>
+            
+                <div data-bs-toggle="modal" data-bs-target="#americamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img3">
+                <div class="cards">
+                    <img src="https://i2-prod.belfastlive.co.uk/incoming/article27312259.ece/ALTERNATES/s1200c/0_GettyImages-1438704203.jpg" 
+                    alt="" class="w-100">
+                </div>
+                </div>
+            
+                <div data-bs-toggle="modal" data-bs-target="#americamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img4">
+                 <div class="cards">
+                    <img src="https://res.cloudinary.com/enchanting/q_90,f_auto,c_lfill,g_auto,w_400,h_400/enchanting-web/2023/09/Enchanting-Travels-South-America-Tours-Brazil-Guest-Image-Maria-Portmann-3.jpg" 
+                    alt="" class="w-100">
+                </div>
+                </div>
+            
+            </div>
+              <!-- SPAIN Modal -->
+              <div class="modal fade" id="americamodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="spainmodal-title" id="staticBackdropLabel">America Destinations</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="" style="margin-left: 10px; color: black;">Tossa De Mar Beach</a>
+                        <a href="" style="margin-left: 10px; color: black;">Levant Beach</a>
+                        <a href="" style="margin-left: 10px; color: black;">Ipanema Beach</a>
+                        <br><br>
+                        <h2 class="spainheading">We Offer 3 Destinations In America</h1>
+                        <p>
+                        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laore etiam. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhon cus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tem pus. Donec vitae sapien ut libero venenatis faucibus lore.
+                        </p>
+                      
+                        </div>
+                    <div class="modal-footer">
+                      <button type="button" class="modalclosebtn" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="modalsecbtn" data-bs-dismiss="modal"><a href="#contact" style="text-decoration: none; color: white;">Book Now</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SPAIN MODAL END -->
+            <!-- pictures first row end -->
+
+
+                   <!-- pictures SECOND row start -->
+                   <div class="row mt-2" id="countrycards">
+                    <!-- <h3 class="col-12 text-center mb-3" style="color: lightseagreen; font-family: cursive;">Asia Destinations</h3> -->
+                
+                <div data-bs-toggle="modal" data-bs-target="#asiaamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img2">
+                    <div class="cards h-100">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/4d/63/60/betaab-valley.jpg?w=600&h=500&s=1"
+                        alt="" class="w-100 h-100">
+                    </div>
+                </div>
+
+                <div data-bs-toggle="modal" data-bs-target="#asiaamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img3">
+                    <div class="cards h-100">
+                        <img src="https://i.guim.co.uk/img/media/6c36faa8209eb3195c80f7ada81caa4892479b53/0_276_5000_3000/master/5000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=a3b106a7cedd8e4db46af4c39b779ea6"
+                        alt="" class="w-100">
+                    </div>
+                </div>
+                
+                <div data-bs-toggle="modal" data-bs-target="#asiaamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img4">
+                    <div class="cards h-100">
+                        <img src="https://cdn.realisticasia.com/499/Mui-Ne-4.jpg"
+                        alt="" class="w-100 h-100">
+                    </div>
+                </div>
+
+                <div data-bs-toggle="modal" data-bs-target="#asiaamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img1" id="">
+                    <div class="cards h-100">
+                        <img src="https://holidaysmaker.pk/wp-content/uploads/2024/06/ASIA-TRIO-768x768.webp" 
+                        alt="Error" class="w-100 h-100" id="roundimages">
+                    </div>
+                </div>
+                
+                </div>
+                  <!-- ASAI Modal -->
+                  <div class="modal fade" id="asiaamodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="spainmodal-title" id="staticBackdropLabel">Asia Destinations</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <a href="" style="margin-left: 10px; color: black;">Azad Kashmir</a>
+                            <a href="" style="margin-left: 10px; color: black;">Taj Mahal</a>
+                                <a href="" style="margin-left: 10px; color: black;">Mui Ne Beach</a>
+                            <br><br>
+                            <h2 class="spainheading">We Offer 3 Destinations In Asia</h1>
+                            <p>
+                            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laore etiam. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhon cus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tem pus. Donec vitae sapien ut libero venenatis faucibus lore.
+                            </p>
+                          
+                            </div>
+                        <div class="modal-footer">
+                          <button type="button" class="modalclosebtn" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="modalsecbtn" data-bs-dismiss="modal"><a href="#contact" style="text-decoration: none; color: white;">Book Now</a></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ASIAA MODAL END -->
+                <!-- pictures SECOND row end -->
+
+
+
+            <!-- pictures third row start -->
+            <div class="row mt-2" id="countrycards">
+                <!-- <h3 class="col-12 text-center mb-3" style="color: lightseagreen; font-family: cursive;">Asia Destinations</h3> -->
+            
+                <div data-bs-toggle="modal" data-bs-target="#asiaamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img1" id="">
+                    <div class="cards h-100">
+                        <img src="https://i.ytimg.com/vi/_3tR5uHMlL0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDEMWanF5PmiHJaOMzJADjDS19Trg" 
+                        alt="Error" class="w-100 h-100" id="roundimages">
+                    </div>
+                </div>
+
+            <div data-bs-toggle="modal" data-bs-target="#asiaamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img2">
+                <div class="cards h-100">
+                    <img src="https://www.wildernesstravel.com/wp-content/uploads/2023/06/antarctica-tourists-boat-iceberg-752x752.jpg"
+                    alt="" class="w-100 h-100">
+                </div>
+            </div>
+
+            <div data-bs-toggle="modal" data-bs-target="#asiaamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img3">
+                <div class="cards h-100">
+                    <img src="https://cdn.adventure-life.com/84/83/4/wnqamw4v/1300x820.webp"
+                    alt="" class="w-100 h-100">
+                </div>
+            </div>
+            
+            <div data-bs-toggle="modal" data-bs-target="#asiaamodal"  class="col-10 offset-1 mt-3 col-sm-6 offset-sm-0 col-md-5 offset-md-1 col-lg-3 offset-lg-0 images img4">
+                <div class="cards h-100">
+                    <img src="https://img.cruisecritic.net/cms-sb/f/1005231/2f7cf8244c/image_18905448.jpg?auto=format&fit=crop&crop=entropy&q=25&w=2048&ixlib=react-9.8.1"
+                    alt="" class="w-100 h-100">
+                </div>
+            </div>
+
+            
+            </div>
+              <!-- ANTANTICA Modal -->
+              <div class="modal fade" id="americamodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="spainmodal-title" id="staticBackdropLabel">Antarctic Destinations</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="" style="margin-left: 10px; color: black;">Antarctic Iceberg</a>
+                        <a href="" style="margin-left: 10px; color: black;">Grytviken</a>
+                        <a href="" style="margin-left: 10px; color: black;">National Geographic</a>
+                        <br><br>
+                        <h2 class="spainheading">We Have 3 Destinations In Antarctic</h1>
+                        <p>
+                        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laore etiam. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhon cus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tem pus. Donec vitae sapien ut libero venenatis faucibus lore.
+                        </p>
+                      
+                        </div>
+                    <div class="modal-footer">
+                      <button type="button" class="modalclosebtn" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="modalsecbtn" data-bs-dismiss="modal"><a href="#contact" style="text-decoration: none; color: white;">Book Now</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ANTANTICA MODAL END -->
+            <!-- pictures third row end -->
+
+
+
+        </div>
+    </section>
+    <!-- TRIP SECTION END HERE -->
+
+
+
+    <!-- ABOUT S SECTION -->
+    <section id="about" class="mt-5">
+        <div id="companydesc" class="">
+
+    <!-- Company Description Section -->
+     <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 ">
+                
+    <section class="company-section text-center">
+        <h1 class="mt-5" style="font-size: 50px; border-bottom: 3px solid rgb(49, 160, 49) ; display: inline-block; font-weight: bold;">About Us</h1>
+
+        <div class="company-intro">
+            <!-- <h2>Our Mission</h2> -->
+            <p>At TravelSmart, we believe that travel is more than just a journey—it’s an experience that transforms you. Founded in 2010, we have been delivering top-tier travel services to clients all over the world. Our team is dedicated to curating personalized travel experiences, ensuring every trip is unforgettable.</p>
+        </div>
+  
+
+
+<!-- 
+        <div class="company-details">
+            <p>To make travel smarter and simpler for everyone. We aim to provide customized and hassle-free travel experiences, backed by outstanding customer service.</p>
+
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Over a decade of experience in the travel industry</li>
+                <li>Highly experienced travel consultants</li>
+                <li>Custom-tailored travel packages to suit your preferences</li>
+                <li>24/7 customer support and travel assistance</li>
+                <li>Affordable yet premium travel experiences</li>
+            </ul>
+
+            <h2>Our Services</h2>
+            <p>From solo travel adventures to family vacations and luxury getaways, TravelSmart offers a wide range of travel services. We specialize in:</p>
+            <ul>
+                <li>Flight and hotel bookings</li>
+                <li>Custom travel packages</li>
+                <li>Luxury and group tours</li>
+                <li>Travel insurance and visa assistance</li>
+                <li>Corporate travel management</li>
+            </ul>
+
+            <h2>Meet Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <h3>Sarah Thompson - CEO</h3>
+                    <p>With over 15 years of experience in the travel industry, Sarah leads TravelSmart with a passion for delivering exceptional travel experiences.</p>
+                </div>
+                <div class="team-member">
+                    <h3>James Riley - Travel Consultant</h3>
+                    <p>James has been with TravelSmart for 8 years, curating personalized itineraries for travelers worldwide.</p>
+                </div>
+                 -->
+                 
+                 
+                 <!-- SPAIN Modal -->
+                 <div class="modal fade " id="companyvalues" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-xl text-center">
+                  <div class="modal-content ">
+                    <div class="modal-header">
+                        <h5 class="spainmodal-title text-dark" id="staticBackdropLabel">About Our Company</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="" style="display: inline; border-bottom: 3px solid rgb(49, 160, 49);">Our Company Values</h1>
+                        
+                        <div class="values-intro mt-4">
+                            <p>At TravelSmart, our values define who we are as a company and how we conduct our business. These principles guide every aspect of our operations and help us deliver exceptional travel experiences for our customers.</p>
+                        </div>
+                        
+                        <div class="values-list">
+                            <div class="value-item">
+                                <h2>Customer Focus</h2>
+                                <p>We put our customers first in everything we do. Your satisfaction is our priority, and we work hard to create memorable and personalized travel experiences that cater to your needs.</p>
+                            </div>
+                
+                            <div class="value-item">
+                                <h2>Integrity</h2>
+                                <p>We believe in doing business the right way. Honesty, transparency, and ethical practices are at the heart of our operations, ensuring trust in every transaction.</p>
+                            </div>
+                
+                            <div class="value-item">
+                                <h2>Innovation</h2>
+                                <p>Travel is ever-evolving, and so are we. We embrace new technologies and ideas to enhance the travel experience, providing our customers with smarter, more efficient travel solutions.</p>
+                            </div>
+                
+                            <div class="value-item">
+                                <h2>Excellence</h2>
+                                <p>Our commitment to excellence drives us to go above and beyond for our customers. We strive for the highest standards in everything we do, from customer service to the travel experiences we offer.</p>
+                            </div>
+                
+                            <div class="value-item">
+                                <h2>Sustainability</h2>
+                                <p>We are committed to sustainable travel practices that protect the environment and support local communities. We believe in leaving a positive impact wherever we go.</p>
+                            </div>
+                
+                            <div class="value-item">
+                                <h2>Collaboration</h2>
+                                <p>We work as a team, both within TravelSmart and with our partners worldwide, to create the best possible travel experiences for our customers. Together, we achieve more.</p>
+                            </div>
+                        </div>
+                
+                      
+                        </div>
+                    <div class="modal-footer">
+                      <button type="button" class="modalclosebtn" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="modalsecbtn" data-bs-dismiss="modal">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SPAIN MODAL END -->
+                
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0">
+                <img src="images/Green Modern Dream Vacation Poster A4.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-0">
+                <h2 style="color: rgb(49, 160, 49);">Our Mission</h2>
+            <p>To make travel smarter and simpler for everyone. We aim to provide customized and hassle-free travel experiences, backed by outstanding customer service.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sint reprehenderit eligendi veritatis voluptatum! Hic ipsum tempore sequi repudiandae,
+                 labore voluptates ab magnam consequuntur quibusdam asperiores fugit quos repellendus possimus.
+            </p>
+            <button id="readmorebtn" data-bs-toggle="modal" data-bs-target="#companyvalues" >Read Company Values</button>
+            </div>
+
+
+
+        </div>
+    <!-- </section> -->
+    
+</div>
+</div>
+</div>
+
+
+        </div>
+    </section>
+    <!-- ABOUT S SECTION  ENDS HERE-->
+
+
+<!-- CONTACT SECTION START HEER -->
+    <section id="contact" class="">
+
+    <!-- contact container start here -->
+    <div class="container" id="contactcontainer">
+        
+        <!-- pic and detail row start -->
+        <div class="row">
+            <div class="col-10 offset-1 col-md-6 offset-md-0">
+                <h1>Contact Us Now</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, iusto commodi! Adipisci at neque
+                    debitis sequi veniam mollitia quidem incidunt id vero vitae expedita eum, necessitatibus magnam.
+                    <br><br>
+                    Optio dolore delectus, maxime ipsam quasi soluta, ipsa assumenda earumtio dolorum in, adipisci quasi nemo harum
+                    consequuntur, labore reiciendis id vel tempora ipsam.
+                </p>
+                <br>
+                <button id="readmorebtn">BOOK NOW</button>
+            </div>
+            <div class="col-10 offset-1 col-md-6 offset-md-0 mt-3 mt-md-0">
+                <img src="https://hsj.com.np/uploads/0000/458/2022/05/30/travel-agency.jpg" class="img-fluid contactimg" alt="">
+                <!-- <img src="https://media.istockphoto.com/id/1207753085/photo/female-travel-agent-giving-tickets-to-young-happy-couple.jpg?s=612x612&w=0&k=20&c=gOsucKRESmxeWc6UYK7QwnNiSN2c7EJxSj6DWhfcR7A=" class="img-fluid" alt=""> -->
+            </div>
+        </div>
+        <!-- pic and detail row end -->
+
+        <!-- form row start -->
+        <div class="row mt-5" id="contactformrow">
+            <div class="col-11 ms-3 ms-sm-3 col-sm-12" id="contactform">
+                
+                <h1 class="formheading">Leave Message</h1>
+
+                <form action="" class="ms-lg-5 mt-lg-5">
+                <div class="contactnames">
+                    <input type="text" placeholder="First Name" id="name" required class="text-white shadow-sm ">
+                    <input type="text" placeholder="Last Name" required class=" shadow-sm ">
+                </div>
+<!-- <br> -->
+                <div class="mt-2">
+                    <input type="email" placeholder="Email" required class=" shadow-sm ">
+                    <input type="tel" placeholder="Phone" required class=" shadow-sm ">
+                </div>
+<!-- <br>             -->
+                    <textarea name="" placeholder="Message" id="" cols="30" rows="5" class="mt-2 shadow-sm "></textarea>
+                
+                    <div class="d-flex justify-content-center">
+                    <button class="mt-2 mb-3  sendbtn">SEND</button>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+        <!-- form row end -->
+
+
+        
+    </div>
+    <!-- contact container ends here -->
+
+    </section>
+<!-- CONTACT SECTION  END HERE-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TOUR REVIEW SECTION -->
+    <section id="review" class="mt-5">
+        <div class="container" id="reviewcontainer">
+
+            <div class="reviews-section shadow p-3">
+                <h1>Our Reviews</h1>
+                <div class="slider">
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <div class="review-card">
+                            <div class="avatar">
+                                <img src="https://images.unsplash.com/photo-1568044852337-9bcc3378fc3c?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyODA4Nzc4OA&ixlib=rb-1.2.1&q=85" alt="Hania Shahid">
+                            </div>
+                            <h2>Hania Shahid</h2>
+                            <p class="title">AMAZING DESTINATIONS </p>
+                            <p class="review-text">I've been finding tours for holidays  for a while now, and I'm always impressed with their wide selection and the complete guidance. </p>
+                        </div>
+                    </div>
+            
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="review-card">
+                            <div class="avatar">
+                                <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyODA4Nzg2NQ&ixlib=rb-1.2.1&q=85" alt="John Doe">
+                            </div>
+                            <h2>John Doe</h2>
+                            <p class="title">Great Customer Service</p>
+                            <p class="review-text">I love the attention to detail and the customer support at this site. They go out of their way to ensure satisfaction.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="review-card">
+                            <div class="avatar">
+                                <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyODA4Nzg2NQ&ixlib=rb-1.2.1&q=85" alt="Jane Doe">
+                            </div>
+                            <h2>Jane Doe</h2>
+                            <p class="title">Great Trip</p>
+                            <p class="review-text">The trip is outstanding. I’ve never been disappointed with anything I’ve wisited from your tours.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Slider Controls -->
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="col-12 text-center mt-5 mb-5">
+             <div class="feedbackheading">Feed Back</div>
+            </div>
+                <!-- <div class="col-12"> -->
+                    
+       <div class="col-10 offset-1  col-md-6 offset-md-0 mt-2 mt-md-0 ">
+        <div class="feedback-form shadow-sm">
+    
+            <!-- Rating Star System -->
+            <div class="rating-stars" id="rating-stars">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+            </div>
+    
+            <!-- Name Input -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+    
+            <!-- Email Input -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+    
+            <!-- Feedback Input -->
+            <div class="mb-3">
+                <label for="feedback" class="form-label">Feedback</label>
+                <textarea class="form-control" id="feedback" rows="4" placeholder="Your Feedback" required></textarea>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit" id="submit-feedback">Submit</button>
+        </div>
+       </div>
+
+       <div class="col-10 offset-1  col-md-6 offset-md-0 col-lg-5 offset-lg-1 mt-2 mt-md-0 ">
+        <img src="images/Playful Sandwiches Restaurant Reviews Instagram Post.png" class="img-fluid" alt="">
+       </div>
+        
+            
+        <!-- </div> -->
+        </div>
+        
+       
+    </div>
+    </section>
+    <!-- TOUR REVIEW SECTION END  -->
+
+
+
+    <!-- FOOTER START -->
+    <div class="container-fluid" style="position: relative; top: 200px;">
+        <div class="row">
+            <div class="col-12">
+                
+    <footer>
+        <div class="footer-container container-fluid">
+            <div class="footer-row">
+                <!-- <div class="col-12 col-sm-4 col-md-3"> -->
+                <!-- About Us Section -->
+                <div class="footer-column text-start ms-3">
+                    <h3>TravelSmart</h3>
+                    <p>At TravelSmart, we specialize in providing personalized travel experiences for all kinds of travelers. Our mission is to make every journey unforgettable.</p>
+                </div>
+            <!-- </div> -->
+    
+                <!-- Quick Links Section -->
+                 <!-- <div class="col-12 col-sm-4 col-md-3"> -->
+                <div class="footer-column text-start ms-3 ms-lg-5">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            <!-- </div> -->
+    
+                <!-- Contact Info Section -->
+                 <!-- <div class="col-12 col-sm-4 col-md-3 bg-success"> -->
+                <div class="footer-column text-start ms-3">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> support@travelsmart.com</li>
+                    </ul>
+                </div>
+            <!-- </div> -->
+                <!-- Social Media Section -->
+                 <!-- <div class="col-12 col-sm-4 col-md-3"> -->
+                <div class="footer-column text-start ms-3">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+    
+                    <!-- Newsletter Subscription -->
+                    <h3>Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            <!-- </div> -->
+        </div>
+    
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 TravelSmart. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    </div>
+    </div>
+    </div>
+    <!-- FOOTER END -->
+
+    <script src="js/index.js"></script>
+    <!-- BOOTSTRAP LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
